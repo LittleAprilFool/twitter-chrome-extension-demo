@@ -1,0 +1,13 @@
+{
+	"name": "Twitter-Ext",
+	"version": "1.0",
+	"manifest_version": 3,
+	"content_scripts": [
+		{
+			"matches": ["http://www.twitter.com/*", "https://twitter.com/*"],
+			"js": ["contentScript.js"],
+      "run_at": "document_idle"
+		}
+	],
+	"action": {}
+}
